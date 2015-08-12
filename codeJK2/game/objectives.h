@@ -161,7 +161,6 @@ void OBJ_LoadObjectiveData(void);
 extern void OBJ_SetPendingObjectives(gentity_t *ent);
 
 extern stringID_table_t objectiveTable [];
-extern stringID_table_t statusTextTable [];
 extern stringID_table_t missionFailedTable [];
 
 

@@ -190,20 +190,3 @@ stringID_table_t missionFailedTable[] =
 	//stringID_table_t Must end with a null entry
 	{ "", 0 }
 };
-
-stringID_table_t statusTextTable[] =
-{
-	//=================================================
-	//
-	//=================================================
-	ENUM2STRING(STAT_INSUBORDINATION),				//# Starfleet will not tolerate such insubordination
-	ENUM2STRING(STAT_YOUCAUSEDDEATHOFTEAMMATE),		//# You caused the death of a teammate.
-	ENUM2STRING(STAT_DIDNTPROTECTTECH),				//# You failed to protect Chell, your technician.
-	ENUM2STRING(STAT_DIDNTPROTECT7OF9),				//# You failed to protect 7 of 9
-	ENUM2STRING(STAT_NOTSTEALTHYENOUGH),			//# You weren't quite stealthy enough
-	ENUM2STRING(STAT_STEALTHTACTICSNECESSARY),		//# Starfleet will not tolerate such insubordination
-	ENUM2STRING(STAT_WATCHYOURSTEP),				//# Watch your step
-	ENUM2STRING(STAT_JUDGEMENTMUCHDESIRED),			//# Your judgement leaves much to be desired
-	//stringID_table_t Must end with a null entry
-	{ "", 0 }
-};

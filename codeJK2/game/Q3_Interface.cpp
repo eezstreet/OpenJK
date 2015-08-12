@@ -799,36 +799,6 @@ static void	Q3_SetMissionFailed(const char *TextEnum)
 
 /*
 -------------------------
-Q3_SetStatusText
--------------------------
-*/
-static void Q3_SetStatusText(const char *StatusTextEnum)
-{
-	int statusTextID;
-
-	statusTextID = GetIDForString( statusTextTable, StatusTextEnum );
-
-	switch (statusTextID)
-	{
-	case STAT_INSUBORDINATION:
-	case STAT_YOUCAUSEDDEATHOFTEAMMATE:
-	case STAT_DIDNTPROTECTTECH:
-	case STAT_DIDNTPROTECT7OF9:
-	case STAT_NOTSTEALTHYENOUGH:
-	case STAT_STEALTHTACTICSNECESSARY:
-	case STAT_WATCHYOURSTEP:
-	case STAT_JUDGEMENTMUCHDESIRED:
-		statusTextIndex = statusTextID;
-		break;
-	default:
-		assert(0);
-		break;
-	}
-}
-
-
-/*
--------------------------
 Q3_ObjectiveClearAll
 -------------------------
 */
@@ -7586,7 +7556,7 @@ extern void LockDoors(gentity_t *const ent);
 		break;
 
 	case SET_MISSIONSTATUSTEXT:
-		Q3_SetStatusText((const char *) data);
+		// vestigial reference to EF code, stubbed out.
 		break;
 		
 	case SET_MISSIONSTATUSTIME:
