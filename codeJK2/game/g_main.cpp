@@ -157,6 +157,8 @@ cvar_t	*g_saberMoveSpeed;
 cvar_t	*g_saberAnimSpeed;
 cvar_t	*g_saberAutoAim;
 
+cvar_t	*g_forceRegenTime;
+
 qboolean	stop_icarus = qfalse;
 
 extern char *G_GetLocationForEnt( gentity_t *ent );
@@ -582,6 +584,8 @@ void G_InitCvars( void ) {
 	gi.cvar( "newTotalSecrets", "0", CVAR_ROM );
 	gi.cvar_set("newTotalSecrets", "0");//used to carry over the count from SP_target_secret to ClientBegin
 	g_iscensored = gi.cvar( "ui_iscensored", "0", CVAR_ARCHIVE|CVAR_ROM|CVAR_INIT|CVAR_CHEAT|CVAR_NORESTART );
+
+	g_forceRegenTime = gi.cvar("g_forceRegenTime", "100", CVAR_ARCHIVE | CVAR_CHEAT);
 }
 
 /*
